@@ -1,8 +1,8 @@
 package main
 
 import (
+	"errcodedemo/errcode"
 	"fmt"
-	"stringerdemo/errcode"
 )
 
 func main() {
