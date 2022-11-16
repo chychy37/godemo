@@ -37,6 +37,7 @@ func main() {
 				buffer.Reset()
 				defer BufferPool.Put(buffer)
 				_, err := io.Copy(buffer, r.Body)
+				defer r.Body.Close()
 				if err != nil {
 					fmt.Fprint(w, "Err read http body fail")
 					return
@@ -50,6 +51,7 @@ func main() {
 				// 直接使用jsoniter优化读取json，内部已使用sync.Pool及buf优化
 				var b map[string]string
 				d := json.NewDecoder(r.Body)
+				defer r.Body.Close()
 				err := d.Decode(&b)
 				if err != nil {
 					fmt.Fprint(w, err)
