@@ -2,11 +2,13 @@ go 1.19
 
 use (
 	./errcodedemo
+	./gorillawebsocketclientdemo
 	./gorillawebsocketdemo
 	./httpdemo
 	./tcpclientdemo
 	./tcpdemo
 	./udpclientdemo
 	./udpdemo
+	./websocketclientdemo
 	./websocketdemo
 )
