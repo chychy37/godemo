@@ -7,6 +7,8 @@ import (
 	"net/http"
 	"sync"
 
+	_ "net/http/pprof"
+
 	jsoniter "github.com/json-iterator/go"
 )
 
