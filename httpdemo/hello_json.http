@@ -1,0 +1,7 @@
+POST http://127.0.0.1:8888/api/hello
+Content-Type: application/json
+
+{
+    "name": "foo",
+    "hello": "world"
+}

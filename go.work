@@ -1,9 +1,10 @@
 go 1.19
 
 use (
-	errcodedemo
-	tcpclientdemo
-	tcpdemo
-	udpclientdemo
-	udpdemo
+	./errcodedemo
+	./httpdemo
+	./tcpclientdemo
+	./tcpdemo
+	./udpclientdemo
+	./udpdemo
 )
